@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous"> -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <header class="header"></header> 
+
+    <div class="container">
+        <div class="bg-top">навигация </div>
+    </div>
+
+    <section class="glav">
+        <div class="container">
+            <h1>Прощай аренда!</h1>
+            <p>Ипотека на покупку помещения <br> для бизнеса!</p>
+            <div class="grup-btm">
+                <a class="glav-btn glav-btn-active" href="https://st2.depositphotos.com/5482604/8042/i/950/depositphotos_80421468-stock-photo-funny-cats-self-picture.jpg" target="_blank">Оформить заявку</a>
+                <a class="glav-btn" href="https://st2.depositphotos.com/5482604/8042/i/950/depositphotos_80421468-stock-photo-funny-cats-self-picture.jpg" target="_blank">обратный звонок</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="calc">
+        <div class="container">
+            <div class="calc-block" id="calc-block">
+                <div class="calc-block__item calc-block__item-bgnone">
+                    <h2>Финансирование <br> покупки <span>коммерческой недвижимости</span> </h2>
+                </div>
+                <div class="calc-block__item calc-block__item-active">
+                    <h3>Калькулятор <br> бизнес-ипотеки</h3>
+                    <a href="#popup" class="calc-btn">рассчитать</a>
+                </div>
+                <div class="calc-block__item">
+                    <img src="./img/calc/1.svg" alt="image">
+                    <h4>До <span>1,5%</span> от стоимости недвижимости - ежемесячный платеж</h4>
+                </div>
+                <div class="calc-block__item">
+                    <img src="./img/calc/2.svg" alt="image">
+                    <h4>От <span>15%</span> стоимости недвижимости - первоначальный взнос</h4>
+                </div>
+                <div class="calc-block__item">
+                    <img src="./img/calc/3.svg" alt="image">
+                    <h4><span>100</span> месяцев - срок кредита </h4>
+                </div>
+                <div class="calc-block__item">
+                    <img src="./img/calc/4.svg" alt="image">
+                    <h4>До <span>200 000$</span> - сумма кредита</h4>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+ 
+    <!-- Модельное окно  --> 
+
+    <div id="popup" class="popup"><!-- затемняющий фон -->
+        <div class="popup-body">
+            <div class="popup-content">
+                <a href="#calc-block" class="popup-close">
+                    <img src="./img/model/+.svg" alt="ds">
+                </a>
+                <div class="popup-title">
+                    <h2>Калькулятор бизнес-ипотеки</h2>
+                </div>
+                <hr>
+                <form class="form1" action="#">
+
+                    <div class="form1-input">
+                        <input type="text" id="1" placeholder="Сумма покупки ($)" value="150 000">
+                    </div>
+                    
+                    <div class="form1-input">
+                        <input type="text" id="1" placeholder="Срок (мес.)*" value="100 ">
+                    </div>
+                    
+                    <div class="form1-input">
+                        <input type="text" id="1" placeholder="Аванс ($)" value="37 500">
+                    </div>
+                    
+                    <div class="form1-input">
+                        <input type="text" id="1" placeholder="Сумма кредита ($)" value="112 500">
+                    </div>
+                    
+
+                    <button class="btn-form1">Ежемесячный платеж: 1&nbsp;977,11 $</button>
+                </form>
+            </div>
+        </div>
+      </div>
+
+      <section class="advantages">
+          <div class="container advantages-container">
+            <div class="advantages-block advantages-block-a ">
+                <h2>Преимущества <br> бизнес-ипотеки</h2>
+                <div class="advantages-block-a__corob">
+                    <h3>Дешевле, <br> чем арендовать недвижимость</h3>
+                    <a href="#popup" class="btn-advantages" href="#">Проверить</a>
+                </div>
+            </div>
+            <div class="advantages-block advantages-block-b">
+                <ul>
+                    <li>Приобретаемое помещение принимается в залог</li>
+                    <li>Возможность приобрести готовую недвижимость или строящиеся объекты</li>
+                    <li>Персональный менеджер с момента обращения и до закрытия сделки</li>
+                    <li>Мы гарантируем безопасность расчетов с Продавцом</li>
+                </ul>
+            </div>
+          </div>
+      </section>
+
+      <section class="request">
+          <div class="container">
+              <h2>Оформить <span>заявку</span></h2>
+              <form class="request-form">
+                  <input type="text" placeholder="Фамилия">
+                  <input type="text" placeholder="Имя">
+                  <input type="text" placeholder="Отчество">
+                  <input type="text" placeholder="Стоимость недвижимости">
+                  <input type="text" placeholder="Номер телефона">
+              </form>
+              <button class="request-btn">Отправить заявку</button>
+           </div>
+      </section>
+
+
+      <!-- mortgage -->
+
+      <div class="hidden-bl">
+        Hello !!!
+    </div>
+
+      <div class="container">
+          <progress id="user-progress" value="0" max="100" ></progress>
+      </div>
+
+
+      
+
+      
+
+
+
+
+
+
+        
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
