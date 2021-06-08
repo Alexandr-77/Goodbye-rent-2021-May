@@ -1,8 +1,6 @@
 
 
-
-
-// === скыть одно модельное окно, другое показать 
+// === скыть одно модельное окно, другое показать ===
 
 let content = document.getElementById("model2")
 let show = document.getElementById("btn-form1")
@@ -13,15 +11,30 @@ show.addEventListener("click", () => {
 })
 
 hide.addEventListener("click", () => {
-    content.style.display = "none"
+    model2.style.display = "none"
 })
 
-// ===
+// === скыть одно модельное окно, другое показать / ===
 
 
 
-// ====== показать еще часть окна 
+// === скыть одно модельное окно, другое показать другой кусок ===
 
+let contentt = document.getElementById("model222")
+let showss = document.getElementById("btn2m")
+let hidee = document.getElementById("hideContent")
+
+showss.addEventListener("click", () => {
+    contentt.style.display = "block"
+})
+
+hidee.addEventListener("click", () => {
+    contentt.style.display = "none"
+})
+
+// === скыть одно модельное окно, другое показать другой кусок ===
+
+// ====== Прогресс бар =========
 
 function  userProgress(time){
     var start = 0;
@@ -46,5 +59,5 @@ function userProgressCallBack(){
 
 userProgress(30);
 
-
+// ====== Прогресс бар / =========
 
