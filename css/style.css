@@ -94,8 +94,20 @@ body {
     top: -2px;
     left: 0;
 }
+.header-menu-nav__item:nth-child(1):hover.header-menu-nav__item a:before {
+    content: url(../img/header/icons_bank-hov.png);
+    position: absolute;
+    top: -2px;
+    left: 0;
+}
 .header-menu-nav__item:nth-child(2):before {
     content: url(../img/header/icons_mark.png);
+    position: absolute;
+    top: -2px;
+    left: 0;
+}
+.header-menu-nav__item:nth-child(2):hover.header-menu-nav__item a:before {
+    content: url(../img/header/icons_mark-hov.png);
     position: absolute;
     top: -2px;
     left: 0;
@@ -106,8 +118,20 @@ body {
     top: 0;
     left: 0;
 }
+.header-menu-nav__item:nth-child(3):hover.header-menu-nav__item a:before {
+    content: url(../img/header/icons_lense-hov.png);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 .header-menu-nav__item:nth-child(4):before {
     content: url(../img/header/icons_lock.png);
+    position: absolute;
+    top: -2px;
+    left: 0;
+}
+.header-menu-nav__item:nth-child(4):hover.header-menu-nav__item a:before {
+    content: url(../img/header/icons_lock-hov.png);
     position: absolute;
     top: -2px;
     left: 0;
@@ -116,6 +140,11 @@ body {
     font-size: 15px;
     color: #fff;
     font-family: Arial, Helvetica, sans-serif;
+    
+}
+.header-menu-nav__item a:hover {
+    color: #ffd200;
+    text-decoration: underline;
 }
 .header-menu-info {
     display: flex;
@@ -220,11 +249,21 @@ body {
 .glav-yellow__item {
     display: flex;
     align-items: center;
-    min-width: 275px;
+    min-width: 240px;
+}
+.glav-yellow__item-img {
+    opacity: 0.5;
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
 }
 .glav-yellow__item-img img {
     max-width: 100%;
-    opacity: 0.5;
+}
+.glav-yellow__item:hover .glav-yellow__item-img {
+    opacity: 1;
 }
 .glav-yellow__item h2 {
     font-size: 16px;
@@ -1311,7 +1350,7 @@ input[type=number]::-webkit-outer-spin-button {
     h1 {
         font-size: 30px;
         margin: 0px 0 10px;
-        padding-top: 170px;
+        padding-top: 85px;
     }
     .glav {
         min-height: 500px;
@@ -1319,6 +1358,9 @@ input[type=number]::-webkit-outer-spin-button {
     .glav p {
         font-size: 16px;
         line-height: 22px;
+        margin-bottom: 50px;
+    }
+    .grup-btm {
         margin-bottom: 50px;
     }
     .glav-btn {
@@ -1407,6 +1449,9 @@ input[type=number]::-webkit-outer-spin-button {
 
 /* ====== Медиа 400px ====== */
 @media (max-width: 400px) {
+    .glav-container {
+        padding: 0;
+    }
     .header-bottom__btn {
         font-size: 10px;
         padding: 10px 10px;
